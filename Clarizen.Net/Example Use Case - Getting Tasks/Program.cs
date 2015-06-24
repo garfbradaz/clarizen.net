@@ -1,6 +1,7 @@
 ﻿using Bradaz.Clarizen.API;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Example_Use_Case___Getting_Tasks
             RestClient client = new RestClient("garfbradaz","Poohead26@");
 
 
-            bool runCZQL = true;
+            bool runCZQL = false;
             bool Task = true;
             bool Organisation = false;
 
@@ -43,6 +44,7 @@ namespace Example_Use_Case___Getting_Tasks
             else
             {
                 client.GetAllMetadataDescribeEntitiesAndGetAllFields(entityType.Task);
+                Debug.WriteLine(client.ConvertedMetadata);
             }
 
 

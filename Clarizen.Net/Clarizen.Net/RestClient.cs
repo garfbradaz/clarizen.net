@@ -30,6 +30,7 @@ namespace Bradaz.Clarizen.API
         private Data data;
 
         public Dictionary<string, IClarizenCustomApplication> CustomApplications;
+        public JObject JsonObjectCollection;
         private Dictionary<string, IClarizenResponse> dataInMemory;
 
         public List<Bradaz.Clarizen.API.Models.Task> Tasks
@@ -49,6 +50,13 @@ namespace Bradaz.Clarizen.API
                 
             }
         }
+        public string ConvertedMetadata
+        {
+            get
+            {
+                return (JsonObjectCollection != null) ? JsonObjectCollection.ToString() : string.Empty;
+            }
+        }
         
         /// <summary>
         /// Default constructor.
@@ -61,6 +69,7 @@ namespace Bradaz.Clarizen.API
                 SetupData();
                 CustomApplications = new Dictionary<string, IClarizenCustomApplication>();
                 dataInMemory = new Dictionary<string, IClarizenResponse>();
+                JsonObjectCollection = new JObject();
             }
         }
 
@@ -80,6 +89,7 @@ namespace Bradaz.Clarizen.API
                 SetupData();
                 CustomApplications = new Dictionary<string, IClarizenCustomApplication>();
                 dataInMemory = new Dictionary<string, IClarizenResponse>();
+                JsonObjectCollection = new JObject();
             }
         }
 
@@ -367,7 +377,7 @@ namespace Bradaz.Clarizen.API
                                   }
                               }
                     }
-                    var JsonObjectCollection = new JObject();
+                    
                     switch (type)
                     {
                         case entityType.Task:

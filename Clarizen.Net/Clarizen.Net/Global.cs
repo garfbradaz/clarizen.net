@@ -22,6 +22,7 @@ namespace Bradaz.Clarizen.API
         public static string DescribeMetadata = "/metadata/describeMetadata";
         public static string DescribeEntities = "/metadata/describeEntities";
         public static string DataQuery = "/data/query";
+        public static string ListEntities = "/metadata/listEntities";
         #endregion
 
         public static string AuthenticatedServerLocation = string.Empty;

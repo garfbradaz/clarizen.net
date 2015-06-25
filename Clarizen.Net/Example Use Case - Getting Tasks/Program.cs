@@ -5,6 +5,8 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+
 
 namespace Example_Use_Case___Getting_Tasks
 {
@@ -45,6 +47,11 @@ namespace Example_Use_Case___Getting_Tasks
             {
                 client.GetAllMetadataDescribeEntitiesAndGetAllFields(entityType.Task);
                 Debug.WriteLine(client.ConvertedMetadata);
+                Debug.WriteLine(client.ListEntities);
+                foreach(string s in client.ListEntities)
+                {
+                    Console.WriteLine(s);  
+                }
             }
 
 

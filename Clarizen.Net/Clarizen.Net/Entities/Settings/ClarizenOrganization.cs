@@ -28,7 +28,6 @@ namespace Bradaz.Clarizen.API.Models
     {
 
         [JsonProperty("entities")]
-        ///public IList<ClarizenOrganization> Organization { get; set; }
         public ClarizenOrganization Organization { get; set; }
     }
 }

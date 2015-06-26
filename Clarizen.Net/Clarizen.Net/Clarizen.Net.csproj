@@ -46,6 +46,7 @@
     <Compile Include="API Handlers\Authenticate.cs" />
     <Compile Include="API Handlers\Data.cs" />
     <Compile Include="CustomApplications\ClarizenTrello.cs" />
+    <Compile Include="Entities\ClarizenEntity.cs" />
     <Compile Include="Entities\Date.cs" />
     <Compile Include="Entities\DescribeEntity.cs" />
     <Compile Include="Entities\Settings\AvailableEntities.cs" />

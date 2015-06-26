@@ -49,8 +49,11 @@ namespace Bradaz.Clarizen.API
                     responseJson = Encoding.UTF8.GetString(responseByte);
                     response = JsonConvert.DeserializeObject<AuthenticateResponse>(responseJson);
 
-                    Console.WriteLine(responseJson);
-                    Console.WriteLine("serverlocation: " + response.ServerLocation + " applocation: " + response.AppLocation);
+                    if (ClarizenSession.ConsoleDebug)
+                    {
+                        Console.WriteLine(responseJson);
+                        Console.WriteLine("serverlocation: " + response.ServerLocation + " applocation: " + response.AppLocation);
+                    }
 
                     ///Now we login now we have the server.
                     requestJson = string.Empty;
@@ -63,16 +66,23 @@ namespace Bradaz.Clarizen.API
                     var loginResponseByte = client.UploadData(response.ServerLocation + ClarizenSession.Login,Encoding.UTF8.GetBytes(requestJson));
                     responseJson = Encoding.UTF8.GetString(loginResponseByte);
                     loginResponse = JsonConvert.DeserializeObject<LoginResponse>(responseJson);
-                    Console.WriteLine(responseJson);      
-                    Console.WriteLine("LicenceType: " + loginResponse.LicenceType);
+
+                    if (ClarizenSession.ConsoleDebug)
+                    {
+                        Console.WriteLine(responseJson);
+                        Console.WriteLine("LicenceType: " + loginResponse.LicenceType);
+                    }
 
                     ClarizenSession.SessionId = loginResponse.SessionId;
                     ClarizenSession.AuthenticatedServerLocation = response.ServerLocation;
                     ClarizenSession.HasAuthenticated = true;
-                    Console.WriteLine("Session ID Set in Global: " + ClarizenSession.SessionId);
 
+                    if (ClarizenSession.ConsoleDebug)
+                    {
+                        Console.WriteLine("Session ID Set in Global: " + ClarizenSession.SessionId);
+                    }
 
-                }
+                  }
                 catch (WebException x)
                 {
                     Console.WriteLine("Status: " + x.Status);

@@ -293,7 +293,10 @@ namespace Bradaz.Clarizen.API
             {
                 try
                 {
-                    Console.WriteLine("Session ID Set in Global-2: " + ClarizenSession.SessionId);
+                    if (Debug)
+                    {
+                        Console.WriteLine("Session ID Set in Global-2: " + ClarizenSession.SessionId);
+                    }
                     ClarizenWebClient.Headers[HttpRequestHeader.Authorization] = string.Format("Session {0}", ClarizenSession.SessionId);
                     ClarizenWebClient.Headers[HttpRequestHeader.ContentType] = "application/json";
 
@@ -323,7 +326,11 @@ namespace Bradaz.Clarizen.API
             {
                 try
                 {
-                    Console.WriteLine("Session ID Set in Global-2: " + ClarizenSession.SessionId);
+                    if (Debug)
+                    {
+                        Console.WriteLine("Session ID Set in Global-2: " + ClarizenSession.SessionId);
+                    }
+               
                     ClarizenWebClient.Headers[HttpRequestHeader.Authorization] = string.Format("Session {0}", ClarizenSession.SessionId);
                     ClarizenWebClient.Headers[HttpRequestHeader.ContentType] = "application/json";
 
@@ -364,7 +371,10 @@ namespace Bradaz.Clarizen.API
             {
                 try
                 {
-                    Console.WriteLine("Session ID Set in Global-2: " + ClarizenSession.SessionId);
+                    if (Debug)
+                    {
+                        Console.WriteLine("Session ID Set in Global-2: " + ClarizenSession.SessionId);
+                    }
                     ClarizenWebClient.Headers[HttpRequestHeader.Authorization] = string.Format("Session {0}", ClarizenSession.SessionId);
                     ClarizenWebClient.Headers[HttpRequestHeader.ContentType] = "application/json";
 
@@ -479,7 +489,10 @@ namespace Bradaz.Clarizen.API
             {
                 try
                 {
-                    Console.WriteLine("Session ID Set in Global-2: " + ClarizenSession.SessionId);
+                    if (Debug)
+                    {
+                        Console.WriteLine("Session ID Set in Global-2: " + ClarizenSession.SessionId);
+                    }
                     ClarizenWebClient.Headers[HttpRequestHeader.Authorization] = string.Format("Session {0}", ClarizenSession.SessionId);
                     ClarizenWebClient.Headers[HttpRequestHeader.ContentType] = "application/json";
 

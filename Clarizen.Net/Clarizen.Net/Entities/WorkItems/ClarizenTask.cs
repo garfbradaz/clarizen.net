@@ -569,7 +569,7 @@ namespace Bradaz.Clarizen.API.Models
         public double Value { get; set; }
     }
 
-    public class Task   : IClarizenEntity
+    public class Task   : ClarizenEntity
     {
 
         [JsonProperty("CreatedBy")]
@@ -1085,8 +1085,6 @@ namespace Bradaz.Clarizen.API.Models
         [JsonProperty("ResourceCalendarExceptionCount")]
         public int ResourceCalendarExceptionCount { get; set; }
 
-        [JsonProperty("id")]
-        public string Id { get; set; }
 
     }
 

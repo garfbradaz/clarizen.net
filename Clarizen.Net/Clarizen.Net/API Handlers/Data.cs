@@ -320,14 +320,21 @@ namespace Bradaz.Clarizen.API
                     //Firstly replace with whitepace.
                     Regex rgx1 = new Regex(statement);
                     string result = rgx1.Replace(query, " ");
-                    Console.WriteLine("Query 2 " + result);
+                    if (ClarizenSession.ConsoleDebug)
+                    {
+                        Console.WriteLine("Query 2 " + result);
+                    }
 
                     //Then replace the white space.
                     string patternWhiteSpace = "\\s+";
                     string replacement = " ";
                     Regex rgx2 = new Regex(patternWhiteSpace);
                     query = rgx2.Replace(result, replacement);
-                    Console.WriteLine("Query 3 " + query);
+
+                    if (ClarizenSession.ConsoleDebug)
+                    {
+                        Console.WriteLine("Query 3 " + query);
+                    }
 
                 }
             }

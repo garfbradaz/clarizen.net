@@ -19,7 +19,7 @@ namespace Example_Use_Case___Getting_Tasks
             RestClient client = new RestClient("garfbradaz","Poohead26@");
 
 
-            bool runCZQL = false;
+            bool runCZQL = true;
             bool Task = true;
             bool Organisation = false;
 

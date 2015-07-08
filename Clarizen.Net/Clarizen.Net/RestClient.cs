@@ -686,7 +686,8 @@ namespace Bradaz.Clarizen.API
                         org = (OrganizationResponse)data.Response;
                         dataInMemory.Add("Organization", org);
                         
-                        CustomApplications.Add("Trello",new ClarizenTrello(org.Organisation[0].CTrelloAPIKey,true));
+                        CustomApplications.Add("Trello",new ClarizenTrello(org.Organisation[0].CTrelloAPIKey,
+                                                org.Organisation[0].CTrelloToken,true));
   
                     }
 
@@ -735,7 +736,7 @@ namespace Bradaz.Clarizen.API
         /// </summary>
         /// <param name="key"></param>
         /// <returns></returns>
-        public string GetCustomApplication (string key)
+        public string GetCustomApplicationAPIKey (string key)
         {
             IClarizenCustomApplication ca = null;
             if(CustomApplications.TryGetValue(key,out ca))
@@ -750,6 +751,25 @@ namespace Bradaz.Clarizen.API
             return null;
         }
 
+        /// <summary>
+        /// Returns any token associated with a Custom Application.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public string GetCustomApplicationToken(string key)
+        {
+            IClarizenCustomApplication ca = null;
+            if (CustomApplications.TryGetValue(key, out ca))
+            {
+                if (ca.GetType() == typeof(ClarizenTrello))
+                {
+                    dynamic d = ca;
+                    return d.TrelloToken;
+                }
+            }
+
+            return null;
+        }
 
         #endregion
 

@@ -22,6 +22,9 @@ namespace Bradaz.Clarizen.API.Models
 
         [JsonProperty("C_TrelloAPIKey")]
         public string CTrelloAPIKey { get; set; }
+
+        [JsonProperty("C_TrelloToken")]
+        public string CTrelloToken { get; set; }
     }
 
     public class Example

@@ -60,12 +60,24 @@ namespace Bradaz.Clarizen.API
         /// <summary>
         /// Property to provide the converted Metadata, which can be used to convert to Plain Old CLR Objects
         /// </summary>
-         public JObject ConvertedMetadata
+        public JObject ConvertedMetadata
         {
             get
             {
                 return (JsonObjectCollection != null) ? JsonObjectCollection : null;
             }
+        }
+
+        public JObject ConvertedMetadataWithoutCustomFields
+        {
+            get
+            {
+
+                JObject j = JsonObjectCollection;
+
+                j.FindTokensAndRemove("C_");
+                return (j != null) ? j : null;
+            }         
         }
 
         /// <summary>
@@ -740,6 +752,8 @@ namespace Bradaz.Clarizen.API
 
 
         #endregion
+
+        
 
 
     }

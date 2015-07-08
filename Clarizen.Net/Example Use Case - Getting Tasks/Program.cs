@@ -19,9 +19,9 @@ namespace Example_Use_Case___Getting_Tasks
             RestClient client = new RestClient("garfbradaz","Poohead26@");
 
 
-            bool runCZQL = true;
+            bool runCZQL = false;
             bool Task = true;
-            bool Organisation = false;
+            bool Organisation = true;
 
             if (runCZQL == true)
             {
@@ -46,12 +46,13 @@ namespace Example_Use_Case___Getting_Tasks
             else
             {
                 client.GetAllMetadataDescribeEntitiesAndGetAllFields(entityType.Task);
-                Debug.WriteLine(client.ConvertedMetadata);
-                Debug.WriteLine(client.ListEntities);
+               // Debug.WriteLine(client.ConvertedMetadata);
+                Debug.WriteLine(client.ConvertedMetadataWithoutCustomFields);
+                /*Debug.WriteLine(client.ListEntities);
                 foreach(string s in client.ListEntities)
                 {
                     Console.WriteLine(s);  
-                }
+                }    */
             }
 
 

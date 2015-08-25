@@ -1,13 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clarizen.Net", "Clarizen.Net\Clarizen.Net.csproj", "{626946E5-B0DA-4B3E-97EE-BDA34256CA52}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example Application", "Example Application", "{35AE319E-9582-4091-92F3-CAB6DE25272C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example Use Case - Getting Tasks", "Example Use Case - Getting Tasks\Example Use Case - Getting Tasks.csproj", "{C05E4819-148F-4F81-ADBE-3581C00744B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clarizen.Net.DataAccessLayer", "Clarizen.Net.DataAccessLayer\Clarizen.Net.DataAccessLayer.csproj", "{9C6B3742-06AE-4F7B-BCE5-EF25F39D39A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Garfbradaz.Common.Lib", "Garfbradaz.Common.Lib\Garfbradaz.Common.Lib.csproj", "{52A6B82C-7EDE-4ECB-AAE9-F4318751C78D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +27,14 @@ Global
 		{C05E4819-148F-4F81-ADBE-3581C00744B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C05E4819-148F-4F81-ADBE-3581C00744B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C05E4819-148F-4F81-ADBE-3581C00744B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C6B3742-06AE-4F7B-BCE5-EF25F39D39A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C6B3742-06AE-4F7B-BCE5-EF25F39D39A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C6B3742-06AE-4F7B-BCE5-EF25F39D39A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C6B3742-06AE-4F7B-BCE5-EF25F39D39A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52A6B82C-7EDE-4ECB-AAE9-F4318751C78D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A6B82C-7EDE-4ECB-AAE9-F4318751C78D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52A6B82C-7EDE-4ECB-AAE9-F4318751C78D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52A6B82C-7EDE-4ECB-AAE9-F4318751C78D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

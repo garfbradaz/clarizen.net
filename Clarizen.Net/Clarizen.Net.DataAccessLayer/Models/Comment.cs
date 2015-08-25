@@ -28,7 +28,7 @@ namespace Clarizen.Net.DataAccessLayer.Models
         public string Name { get; set; }
 
         [JsonProperty("Comment")]
-        public string Comment { get; set; }
+        public string ClarizenComment { get; set; }
 
         [JsonProperty("PlainText")]
         public string PlainText { get; set; }

@@ -9,56 +9,6 @@ using Newtonsoft.Json.Linq;
 namespace Clarizen.Net.DataAccessLayer.Models
 {
 
-    public  class Duration 
-    { /*Root*/
-
-        [JsonProperty("unit")]
-        public string Unit { get; set; }
-
-        [JsonProperty("value")]
-        public double Value { get; set; }
-    }
-
-    public  class BillingRate 
-    { /*Root*/
-
-        [JsonProperty("currency")]
-        public string Currency { get; set; }
-
-        [JsonProperty("value")]
-        public double Value { get; set; }
-    }
-
-    public  class Cost 
-    { /*Root*/
-
-        [JsonProperty("currency")]
-        public string Currency { get; set; }
-
-        [JsonProperty("value")]
-        public double Value { get; set; }
-    }
-
-    public  class CostRate 
-    { /*Root*/
-
-        [JsonProperty("currency")]
-        public string Currency { get; set; }
-
-        [JsonProperty("value")]
-        public double Value { get; set; }
-    }
-
-    public  class Price 
-    { /*Root*/
-
-        [JsonProperty("currency")]
-        public string Currency { get; set; }
-
-        [JsonProperty("value")]
-        public double Value { get; set; }
-    }
-
     public partial class Timesheet  : ClarizenEntity
     { /*Root*/
 

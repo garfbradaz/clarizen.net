@@ -9,46 +9,6 @@ using Newtonsoft.Json.Linq;
 namespace Clarizen.Net.DataAccessLayer.Models
 {
 
-    public  class Work 
-    { /*Root*/
-
-        [JsonProperty("unit")]
-        public string Unit { get; set; }
-
-        [JsonProperty("value")]
-        public double Value { get; set; }
-    }
-
-    public  class ActualEffort 
-    { /*Root*/
-
-        [JsonProperty("unit")]
-        public string Unit { get; set; }
-
-        [JsonProperty("value")]
-        public double Value { get; set; }
-    }
-
-    public  class RemainingEffort 
-    { /*Root*/
-
-        [JsonProperty("unit")]
-        public string Unit { get; set; }
-
-        [JsonProperty("value")]
-        public double Value { get; set; }
-    }
-
-    public  class WorkVariance 
-    { /*Root*/
-
-        [JsonProperty("unit")]
-        public string Unit { get; set; }
-
-        [JsonProperty("value")]
-        public double Value { get; set; }
-    }
-
     public partial class Risk  : ClarizenEntity
     { /*Root*/
 

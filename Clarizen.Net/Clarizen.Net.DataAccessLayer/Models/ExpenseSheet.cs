@@ -9,36 +9,6 @@ using Newtonsoft.Json.Linq;
 namespace Clarizen.Net.DataAccessLayer.Models
 {
 
-    public  class Total 
-    { /*Root*/
-
-        [JsonProperty("currency")]
-        public string Currency { get; set; }
-
-        [JsonProperty("value")]
-        public double Value { get; set; }
-    }
-
-    public  class ReimbursedTotal 
-    { /*Root*/
-
-        [JsonProperty("currency")]
-        public string Currency { get; set; }
-
-        [JsonProperty("value")]
-        public double Value { get; set; }
-    }
-
-    public  class BillableTotal 
-    { /*Root*/
-
-        [JsonProperty("currency")]
-        public string Currency { get; set; }
-
-        [JsonProperty("value")]
-        public double Value { get; set; }
-    }
-
     public partial class ExpenseSheet  : ClarizenEntity
     { /*Root*/
 

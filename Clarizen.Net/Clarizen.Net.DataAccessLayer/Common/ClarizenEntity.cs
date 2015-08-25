@@ -1,7 +1,6 @@
-﻿using Clarizen.Net.DataAccessLayer.Models;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
-namespace Clarizen.Net.Models
+namespace Clarizen.Net.DataAccessLayer.Models
 {
     public class ClarizenEntity : IClarizenEntity        
     {  

@@ -4,8 +4,7 @@
 using Newtonsoft.Json;
 
 namespace Clarizen.Net.DataAccessLayer.Models
-{
-
+{ 
     public class Field
     {
 
@@ -94,7 +93,7 @@ namespace Clarizen.Net.DataAccessLayer.Models
 
 }
 
-namespace Bradaz.Clarizen.API.Models
+namespace Clarizen.Net.DataAccessLayer.Models
 {
 
     public class DescribeEntity

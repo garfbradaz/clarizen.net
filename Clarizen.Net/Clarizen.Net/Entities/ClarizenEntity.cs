@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bradaz.Clarizen.API.Models
+namespace Bradaz.Clarizen.API
 {
     public class ClarizenEntity : IClarizenEntity        
     {  

@@ -9,16 +9,6 @@ using Newtonsoft.Json.Linq;
 namespace Clarizen.Net.DataAccessLayer.Models
 {
 
-    public  class CustomerValue 
-    { /*Root*/
-
-        [JsonProperty("currency")]
-        public string Currency { get; set; }
-
-        [JsonProperty("value")]
-        public double Value { get; set; }
-    }
-
     public partial class Customer  : ClarizenEntity
     { /*Root*/
 

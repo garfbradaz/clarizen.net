@@ -9,26 +9,6 @@ using Newtonsoft.Json.Linq;
 namespace Clarizen.Net.DataAccessLayer.Models
 {
 
-    public  class RegularRate 
-    { /*Root*/
-
-        [JsonProperty("currency")]
-        public string Currency { get; set; }
-
-        [JsonProperty("value")]
-        public double Value { get; set; }
-    }
-
-    public  class OvertimeRate 
-    { /*Root*/
-
-        [JsonProperty("currency")]
-        public string Currency { get; set; }
-
-        [JsonProperty("value")]
-        public double Value { get; set; }
-    }
-
     public partial class Rate  : ClarizenEntity
     { /*Root*/
 

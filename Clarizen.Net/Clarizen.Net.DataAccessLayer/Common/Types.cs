@@ -1,10 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace Clarizen.Net.DataAccessLayer.Models
+namespace Bradaz.Clarizen.API
 {
 
-
+    
     /// <summary>
     /// Clarizen paramater object to be used when querying (Used for binding purposes).
     /// https://api.clarizen.com/V2.0/services/types/Parameters

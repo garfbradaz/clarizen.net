@@ -9,16 +9,6 @@ using Newtonsoft.Json.Linq;
 namespace Clarizen.Net.DataAccessLayer.Models
 {
 
-    public  class Lag 
-    { /*Root*/
-
-        [JsonProperty("unit")]
-        public string Unit { get; set; }
-
-        [JsonProperty("value")]
-        public double Value { get; set; }
-    }
-
     public partial class DependencyLink  : ClarizenEntity
     { /*Root*/
 

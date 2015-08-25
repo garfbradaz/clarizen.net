@@ -9,16 +9,6 @@ using Newtonsoft.Json.Linq;
 namespace Clarizen.Net.DataAccessLayer.Models
 {
 
-    public  class TimeAtDay 
-    { /*Root*/
-
-        [JsonProperty("unit")]
-        public string Unit { get; set; }
-
-        [JsonProperty("value")]
-        public double Value { get; set; }
-    }
-
     public partial class ResourceCalendarExceptionAbsolute  : ClarizenEntity
     { /*Root*/
 
